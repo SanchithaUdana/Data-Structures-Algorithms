@@ -1,7 +1,6 @@
 
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Stack;
+import java.util.*;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -72,9 +71,92 @@ public class Main {
         newQueue.clear();
         System.out.println(newQueue);
 
-        
 
 //----------------------------------------------------------------------------------------------------------------------//
+
+        // --> Priority Queue
+            // in the queue, when used while loop to poll values ,
+            // the output show small value to large value  A to Z
+            // to reverse the order   Z to A
+            // Queue<Integer> nameOfNewObject = new PriorityQueue<>(Collections.reverseOrder());  <--  this code
+            // in PriorityQueue calling Constructor inside Collections.reverseOrder()
+
+        Queue<Integer> queuep = new PriorityQueue<>(Collections.reverseOrder());
+
+        queuep.offer(100);
+        queuep.offer(50);
+        queuep.offer(70);
+        queuep.offer(10);
+        queuep.offer(15);
+
+            // when the queue empty, while loop is running when the queue is empty
+        while (!queuep.isEmpty()){
+            System.out.println(queuep.poll());
+        }
+
+//----------------------------------------------------------------------------------------------------------------------//
+
+        //--> LinkedList
+
+        LinkedList<String> linked1 = new LinkedList<String>();
+
+            // we can use this LinkedList as Stack
+        /*
+        linked1.push("A");
+        linked1.push("B");
+        linked1.push("C");
+        linked1.push("D");
+        linked1.push("F");
+        System.out.println("before pop "+linked1);
+        linked1.pop();
+        System.out.println("after pop "+linked1);
+        */
+            // using as a Queue
+
+        linked1.offer("A");
+        linked1.offer("B");
+        linked1.offer("C");
+        linked1.offer("D");
+        linked1.offer("F");
+        //System.out.println(linked1);
+        //linked1.poll();
+            // ada new values
+        System.out.println(linked1);
+        linked1.add(4,"E");
+        System.out.println(linked1);
+        linked1.add(6,"G");
+        System.out.println(linked1);
+            // remove value
+        linked1.remove("G");
+        System.out.println(linked1);
+            // add a value to first
+        linked1.addFirst("1");
+        System.out.println(linked1);
+            // add a value to last
+        linked1.addLast("Z");
+        System.out.println(linked1);
+            // remove last and first value
+        linked1.removeFirst();
+        linked1.removeLast();
+        System.out.println(linked1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
