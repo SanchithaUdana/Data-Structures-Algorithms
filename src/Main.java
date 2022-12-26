@@ -10,6 +10,8 @@ public class Main {
 
         // --> Stack Data Structure
             // this is the "last in first out"
+            // in stack data structure, if we need to add a new value to stack, we used push function
+            // and we use pop function to remove a value from the stack
 
             // create a stack
         Stack<String> stackOfBooks = new Stack<>();
@@ -45,9 +47,10 @@ public class Main {
 
         // --> Queue Data Structure
             // this is the "first in first out"
+            // in queue data structure, if we need to add a new value to queue, we used offer command
+            // and we used poll command to remove a value from queue
 
         Queue<String> newQueue = new LinkedList<>();
-
         newQueue.offer("sanchitha");
         newQueue.offer("udana");
         newQueue.offer("wijesundara");
@@ -68,9 +71,11 @@ public class Main {
             // clear alla data included in Queue
         newQueue.clear();
         System.out.println(newQueue);
+
         
 
 //----------------------------------------------------------------------------------------------------------------------//
+
 
 
 
