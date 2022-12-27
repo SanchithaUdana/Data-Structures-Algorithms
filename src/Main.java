@@ -140,6 +140,8 @@ public class Main {
         linked1.removeLast();
         System.out.println(linked1);
 
+        // change
+
 
 
 
