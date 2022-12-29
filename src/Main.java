@@ -139,7 +139,7 @@ public class Main {
         linked1.removeFirst();
         linked1.removeLast();
         System.out.println(linked1);
-
+        
 
 
 
